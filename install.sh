@@ -53,8 +53,8 @@ else
   # Update System
   sudo pacman --noconfirm -Syu
 
-  # Install steam, geary, man, git and discord
-  sudo pacman --noconfirm -S git man-db discord geary steam
+  # Install transmission, steam, geary, man, git and discord
+  sudo pacman --noconfirm -S git man-db discord geary steam transmission-gtk
 
   # Install yay
   cd ~/Downloads/
