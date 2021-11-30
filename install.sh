@@ -84,28 +84,23 @@ else
 
   # Install Dash to Dock Extension
   cd ~/Downloads/
-  git clone https://github.com/micheleg/dash-to-dock.git
-  cd dash-to-dock/
-  make
-  make install
+  wget "https://extensions.gnome.org/extension-data/dash-to-dockmicxgx.gmail.com.v71.shell-extension.zip"
+  gnome-extensions install dash-to-dockmicxgx.gmail.com.v71.shell-extension.zip
 
   # Install Alphabetical Grid Extension
   cd ~/Downloads/
-  git clone https://github.com/stuarthayhurst/alphabetical-grid-extension.git
-  cd alphabetical-grid-extension/
-  make build
-  make install
+  wget "https://github.com/stuarthayhurst/alphabetical-grid-extension/releases/download/v16.0/AlphabeticalAppGrid@stuarthayhurst.shell-extension.zip"
+  gnome-extensions install AlphabeticalAppGrid@stuarthayhurst.shell-extension.zip
 
   # Install Just Perfection Extension
   cd ~/Downloads/
-  git clone https://gitlab.gnome.org/jrahmatzadeh/just-perfection.git
-  cd just-perfection/
-  ./scripts/build.sh -i
+  wget "https://extensions.gnome.org/extension-data/just-perfection-desktopjust-perfection.v16.shell-extension.zip"
+  gnome-extensions install just-perfection-desktopjust-perfection.v16.shell-extension.zip
 
   # Install Tray Icons Reloaded Extension
-  cd ~/.local/share/gnome-shell/extensions/
-  git clone https://github.com/MartinPL/Tray-Icons-Reloaded.git
-  mv ./Tray-Icons-Reloaded ./trayIconsReloaded@selfmade.pl
+  cd ~/Downloads/
+  wget "https://github.com/MartinPL/Tray-Icons-Reloaded/releases/download/17/trayIconsReloaded@selfmade.pl.zip"
+  gnome-extensions install trayIconsReloaded@selfmade.pl.zip
 
   # Install Nuclear v0.6.16
   sudo mkdir -p /opt/.AppImages/Nuclear/
