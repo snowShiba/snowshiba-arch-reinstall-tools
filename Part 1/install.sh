@@ -4,6 +4,12 @@ sudo cp /etc/pacman.conf /etc/pacman.conf.bak
 # Move New Pacman Config
 sudo mv ./configs/pacman.conf /etc/pacman.conf
 
+#Backup bashrc
+cp ~/.bashrc ~/.bashrc.bak
+
+#Move New bashrc
+mv ./configs/.bashrc ~/.bashrc
+
 # Update System
 sudo pacman --noconfirm -Syu
 
@@ -16,8 +22,8 @@ git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin/
 makepkg -is
 
-# Install Brave, Minecraft, Timeshift, NordVPN and qView
-yay -S brave-bin minecraft-launcher timeshift-bin nordvpn-bin qview
+# Install ani-cli, pfetch Brave, Minecraft, Timeshift, NordVPN and qView
+yay -S brave-bin minecraft-launcher timeshift-bin nordvpn-bin qview ani-cli-git pfetch
 
 # Enable NordVPN
 sudo systemctl enable --now nordvpnd
@@ -73,7 +79,7 @@ cd /opt/.AppImages/Nuclear/
 sudo wget "https://raw.githubusercontent.com/nukeop/nuclear/master/build/icons/512x512.png" -O Nuclear.png
 sudo wget "https://github.com/nukeop/nuclear/releases/download/v0.6.16/nuclear-v0.6.16.AppImage" -O Nuclear.AppImage
 sudo chmod +x Nuclear.AppImage
-cd ~/Downloads/snowshiba-arch-reinstall-tools/Part\ 1/desktop\ files/
+cd ~/Downloads/snowshiba-arch-reinstall-tools/part\ 1/desktop\ files/
 chmod +x nuclear.desktop
 sudo desktop-file-install nuclear.desktop
 
@@ -83,7 +89,7 @@ cd /opt/.AppImages/BitWarden
 sudo wget "https://avatars.githubusercontent.com/u/15990069?s=200&v=4" -O BitWarden.png
 sudo wget "https://github.com/bitwarden/desktop/releases/download/v1.29.1/Bitwarden-1.29.1-x86_64.AppImage" -O BitWarden.AppImage
 sudo chmod +x BitWarden.AppImage
-cd ~/Downloads/snowshiba-arch-reinstall-tools/Part\ 1/desktop\ files/
+cd ~/Downloads/snowshiba-arch-reinstall-tools/part\ 1/desktop\ files/
 chmod +x bitwarden.desktop
 sudo desktop-file-install bitwarden.desktop
 
@@ -93,7 +99,7 @@ cd /opt/.AppImages/Etcher
 sudo wget "https://raw.githubusercontent.com/balena-io/etcher/master/assets/iconset/512x512.png" -O Etcher.png
 sudo wget "https://github.com/balena-io/etcher/releases/download/v1.7.1/balenaEtcher-1.7.1-x64.AppImage" -O Etcher.AppImage
 sudo chmod +x Etcher.AppImage
-cd ~/Downloads/snowshiba-arch-reinstall-tools/Part\ 1/desktop\ files/
+cd ~/Downloads/snowshiba-arch-reinstall-tools/part\ 1/desktop\ files/
 chmod +x etcher.desktop
 sudo desktop-file-install etcher.desktop
 
