@@ -77,7 +77,7 @@ else
   cd ~/Downloads/
   git clone https://github.com/vinceliuice/Qogir-theme.git
   cd Qogir-theme/
-  sudo ./install.sh -l arch -g -c dark --tweaks square -t default
+  sudo ./install.sh -l arch -c dark --tweaks square -t default
   gsettings set org.gnome.shell.extensions.user-theme name Qogir-dark
   gsettings set org.gnome.desktop.interface gtk-theme Qogir-dark
 
