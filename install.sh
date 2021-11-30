@@ -38,17 +38,23 @@ else
   # Move New Pacman Config
   sudo mv ./configs/pacman.conf /etc/pacman.conf
 
-  #Backup bashrc
+  # Backup bashrc
   cp ~/.bashrc ~/.bashrc.bak
 
-  #Move New bashrc
+  # Move New bashrc
   mv ./configs/.bashrc ~/.bashrc
+  
+  # Backup makepkg Config
+  sudo cp /etc/makepkg.conf /etc/makepkg.conf.bak
+  
+  # Move New makepkg Config
+  sudo mv ./configs/makepkg.conf /etc/makepkg.conf
 
   # Update System
   sudo pacman --noconfirm -Syu
 
-  # Install steam, geary, man, git and discord
-  sudo pacman --noconfirm -S git man-db discord geary steam
+  # Install transmission, steam, geary, man, git and discord
+  sudo pacman --noconfirm -S git man-db discord geary steam transmission-gtk
 
   # Install yay
   cd ~/Downloads/
@@ -57,7 +63,7 @@ else
   makepkg -is
 
   # Install ani-cli, pfetch Brave, Minecraft, Timeshift, NordVPN and qView
-  yay -S brave-bin minecraft-launcher timeshift-bin nordvpn-bin qview ani-cli-git pfetch
+  yay --noprovides --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --noremovemake -S brave-bin minecraft-launcher timeshift-bin nordvpn-bin qview ani-cli-git pfetch
 
   # Enable NordVPN
   sudo systemctl enable --now nordvpnd
@@ -71,7 +77,7 @@ else
   cd ~/Downloads/
   git clone https://github.com/vinceliuice/Qogir-theme.git
   cd Qogir-theme/
-  sudo ./install.sh -l arch -g -c dark --tweaks square -t default
+  sudo ./install.sh -l arch -c dark --tweaks square -t default
   gsettings set org.gnome.shell.extensions.user-theme name Qogir-dark
   gsettings set org.gnome.desktop.interface gtk-theme Qogir-dark
 
@@ -133,7 +139,7 @@ else
   sudo desktop-file-install etcher.desktop
 
   # Uninstall Bloat
-  sudo pacman --noconfirm -Rs gnome-contacts gnome-clocks gnome-maps gnome-books gnome-photos gnome-boxes gnome-software cheese htop vim
+  sudo pacman --noconfirm -Rs gnome-contacts gnome-clocks gnome-maps gnome-books gnome-photos gnome-boxes gnome-software gnome-calendar cheese htop vim
 
   # Create completion file
   cd ~/Downloads/snowshiba-arch-reinstall-tools/
