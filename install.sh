@@ -139,7 +139,7 @@ else
   sudo desktop-file-install etcher.desktop
 
   # Uninstall Bloat
-  sudo pacman --noconfirm -Rs gnome-contacts gnome-clocks gnome-maps gnome-books gnome-photos gnome-boxes gnome-software cheese htop vim
+  sudo pacman --noconfirm -Rs gnome-contacts gnome-clocks gnome-maps gnome-books gnome-photos gnome-boxes gnome-software gnome-calendar cheese htop vim
 
   # Create completion file
   cd ~/Downloads/snowshiba-arch-reinstall-tools/
