@@ -48,7 +48,7 @@ else
   sudo cp /etc/makepkg.conf /etc/makepkg.conf.bak
   
   # Move New makepkg Config
-  mv ./configs/makepkg.conf /etc/makepkg.conf
+  sudo mv ./configs/makepkg.conf /etc/makepkg.conf
 
   # Update System
   sudo pacman --noconfirm -Syu
