@@ -1,0 +1,8 @@
+[Desktop Entry]
+StartupWMClass=nuclear
+Type=Application
+Name=Nuclear
+Comment=Nuclear Music Player
+Icon=/opt/.AppImages/Nuclear/Nuclear.png
+Exec=/opt/.AppImages/Nuclear/Nuclear.AppImage
+Terminal=false
