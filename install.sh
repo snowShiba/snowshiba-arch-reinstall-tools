@@ -70,6 +70,9 @@ else
   # Enable NordVPN
   sudo systemctl enable --now nordvpnd
   sudo usermod -aG nordvpn $USER
+  
+  # Enable Minimize and Maximize Buttons
+  gsettings set org.gnome.desktop.wm.preferences button-layout appmenu:minimize,maximize,close
 
   # Enable User Theme and Places Menu Extension
   gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
