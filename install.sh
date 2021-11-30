@@ -14,6 +14,8 @@ if test -f "$FILE"; then
   dconf write /org/gnome/shell/extensions/just-perfection/window-picker-icon false
   dconf write /org/gnome/shell/extensions/just-perfection/aggregate-menu false
   dconf write /org/gnome/shell/extensions/just-perfection/power-icon false
+  dconf write /org/gnome/shell/extensions/just-perfection/startup-status 0
+  
 
   # Configure Dash to Dock Extension
   dconf write /org/gnome/shell/extensions/dash-to-dock/force-straight-corner true
