@@ -38,11 +38,17 @@ else
   # Move New Pacman Config
   sudo mv ./configs/pacman.conf /etc/pacman.conf
 
-  #Backup bashrc
+  # Backup bashrc
   cp ~/.bashrc ~/.bashrc.bak
 
-  #Move New bashrc
+  # Move New bashrc
   mv ./configs/.bashrc ~/.bashrc
+  
+  # Backup makepkg Config
+  sudo cp /etc/makepkg.conf /etc/makepkg.conf.bak
+  
+  # Move New makepkg Config
+  mv ./configs/makepkg.conf /etc/makepkg.conf
 
   # Update System
   sudo pacman --noconfirm -Syu
