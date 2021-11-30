@@ -63,7 +63,7 @@ else
   makepkg -is
 
   # Install ani-cli, pfetch Brave, Minecraft, Timeshift, NordVPN and qView
-  yay -S brave-bin minecraft-launcher timeshift-bin nordvpn-bin qview ani-cli-git pfetch
+  yay --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --noremovemake -S brave-bin minecraft-launcher timeshift-bin nordvpn-bin qview ani-cli-git pfetch
 
   # Enable NordVPN
   sudo systemctl enable --now nordvpnd
