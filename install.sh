@@ -145,6 +145,9 @@ else
 
   # Uninstall Bloat
   sudo pacman --noconfirm -Rs gnome-contacts gnome-clocks gnome-maps gnome-books gnome-photos gnome-boxes gnome-software gnome-calendar cheese htop vim
+  
+  # Set Favorite Applications
+  gsettings set org.gnome.shell favorite-apps "['brave-browser.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'Nuclear.desktop', 'discord.desktop', 'org.gnome.Geary.desktop', 'steam.desktop', 'org.gnome.Weather.desktop', 'BitWarden.desktop', 'org.gnome.Extensions.desktop', 'org.gnome.tweaks.desktop', 'gnome-control-center.desktop']"
 
   # Create completion file
   cd ~/Downloads/snowshiba-arch-reinstall-tools/
