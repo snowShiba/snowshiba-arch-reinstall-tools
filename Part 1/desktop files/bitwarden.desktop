@@ -1,8 +1,0 @@
-[Desktop Entry]
-StartupWMClass=bitwarden
-Type=Application
-Name=BitWarden
-Comment=BitWarden Password Manager
-Icon=/opt/.AppImages/BitWarden/BitWarden.png
-Exec=/opt/.AppImages/BitWarden/BitWarden.AppImage
-Terminal=false

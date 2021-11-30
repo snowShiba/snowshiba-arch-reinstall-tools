@@ -1,8 +1,0 @@
-[Desktop Entry]
-StartupWMClass=balena-etcher-electron
-Type=Application
-Name=Etcher
-Comment=Etcher Image Burner
-Icon=/opt/.AppImages/Etcher/Etcher.png
-Exec=/opt/.AppImages/Etcher/Etcher.AppImage
-Terminal=false
